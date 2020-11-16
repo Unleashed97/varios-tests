@@ -1,0 +1,188 @@
+html, body
+{
+    margin: 0;
+    padding: 0;
+
+}
+
+.container
+{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* HEAD NAV */
+.header
+{
+    background-color: #7FFFD4;
+}
+
+.nav
+{
+    display: flex;
+    justify-content: center;
+    height: 60px;
+    line-height: 40px;
+
+}
+
+.nav a
+{
+    text-decoration: none;
+    margin-right: 50px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    color: black;
+    padding: 10px 15px;
+    transition: background-color .5s ease-in-out;
+}
+
+.nav a:last-child
+{
+    margin-right: 0;
+}
+
+.nav a:hover
+{
+    background-color: #00CED1;
+}
+
+.main
+{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+
+    margin-top: 50px;
+
+    /* высота экрана минус header */
+    height: calc(100vh - 110px);
+}
+
+/* HEAD */
+.quiz__head
+{
+    display: flex;
+    /* justify-content: center; */
+
+}
+
+.quiz__body
+{
+
+}
+
+/* QUESTION */
+.quiz__question
+{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+
+.quiz__question img
+{
+    margin-top: 15px;
+    border-radius: 20px;
+}
+
+/* ANSWER */
+
+.quiz__answer
+{
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.quiz__answer input
+{
+    padding: 10px 15px;
+    outline: none;
+    border: none;
+    border-radius: 7px;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    background-color: #EFEFEF;
+    transition: box-shadow .1s linear;
+}
+
+.quiz__answer input:focus
+{
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+
+.quiz__answer input.right
+{
+    background-color: #32CD32;
+}
+
+.quiz__answer input.wrong
+{
+    background-color: #FF0000;
+}
+
+.quiz__answer button
+{
+    padding: 10px 15px;
+    outline: none;
+    border: 1px solid #7FFFD4;
+    background-color: #7FFFD4;
+    border-radius: 7px;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    transition: box-shadow .1s linear;
+
+    margin-left: 10px;
+}
+
+.quiz__answer button:hover
+{
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+
+.right
+{
+    background-color: #32CD32;
+}
+.wrong
+{
+    background-color: #FF0000;
+}
+
+/* QUIZ FOOTER */
+
+.quiz__quiz-footer
+{
+    display: flex;
+    justify-content: center;
+
+    margin-top: 40px;
+}
+
+.quiz__quiz-footer .quiz-footer__content
+{
+    font-size: 20px;
+}
+
+/* FOOTER */
+
+.footer
+{
+    background-color: #DCDCDC;
+}
+
+.footer__content
+{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.footer__copy
+{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-style: italic;
+}
