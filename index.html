@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="images/favicon.png" type="image/png">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="stylesheet" href="css/main.css">
     <title>Тесты</title>
 </head>
@@ -34,7 +35,13 @@
                     <div class="quiz__answer">
                         <input type="text" class="answer__content" id="answer" placeholder="Ваш ответ">
                         <!-- <input type="submit" class="isRight" id="isRight" value="Далее"> -->
-                        <button class="answer__complete">Далее</button>
+                        <!-- <button class="answer__complete">Далее</button> -->
+                    </div>
+                    <div class="quiz__description">
+                        <div class="quiz__mark"></div>
+                        <b></b>
+                        <span class="quiz__right-answer"></span>
+                        <div class="quiz__facts"></div>
                     </div>
                 </div>
                 <div class="quiz__quiz-footer">
@@ -43,7 +50,7 @@
             </div>
         </div>
     </div>
-    
+
     <footer class="footer">
         <div class="container">
             <div class="footer__content">
@@ -56,6 +63,5 @@
 
     <script src="js/quiz-data.js"></script>
     <script src="js/quiz.js"></script>
-    
 </body>
 </html>

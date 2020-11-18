@@ -3,6 +3,8 @@ html, body
     margin: 0;
     padding: 0;
 
+    font-family: 'Helvetica', sans-serif;
+    font-size: 15px;
 }
 
 .container
@@ -140,14 +142,14 @@ html, body
     box-shadow: 0 0 5px rgba(0,0,0,0.5);
 }
 
-.right
+/* .right
 {
     background-color: #32CD32;
 }
 .wrong
 {
     background-color: #FF0000;
-}
+} */
 
 /* QUIZ FOOTER */
 
@@ -163,6 +165,50 @@ html, body
 {
     font-size: 20px;
 }
+
+
+.quiz__description{
+    margin-top: 40px;
+    height: 150px;
+
+    font-size: 20px;
+}
+.quiz__mark{
+    font-size: 25px;
+    font-weight: 700;
+
+    margin-bottom: 20px;
+}
+
+.quiz__mark.right::before{
+    display: inline-block;
+    font-family: 'Font Awesome 5 Pro';
+    content: '\f057';
+    color: green;
+    font-size: 20px;
+    font-weight: 900;
+    margin-right: 10px;
+}
+
+.quiz__mark.wrong::before{
+    display: inline-block;
+    font-family: 'Font Awesome 5 Pro';
+    content: '\f058';
+    color: red;
+    font-size: 20px;
+    font-weight: 900;
+    margin-right: 10px;
+}
+
+.quiz__mark.right{
+    color: green;
+}
+
+
+.quiz__mark.wrong{
+    color: red;
+}
+
 
 /* FOOTER */
 
