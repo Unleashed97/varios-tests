@@ -69,11 +69,6 @@ html, body
 
 }
 
-.quiz__body
-{
-
-}
-
 /* QUESTION */
 .quiz__question
 {
@@ -86,6 +81,8 @@ html, body
 {
     margin-top: 15px;
     border-radius: 20px;
+
+    max-width: 620px;
 }
 
 /* ANSWER */
