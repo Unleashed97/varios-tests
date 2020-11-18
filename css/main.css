@@ -168,7 +168,8 @@ html, body
 
 .footer
 {
-    background-color: #DCDCDC;
+    height: 300px;
+    background-color: #EFEFEF;
 }
 
 .footer__content
