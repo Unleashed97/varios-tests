@@ -51,22 +51,66 @@ html, body
     background-color: #00CED1;
 }
 
+/* GREETING WINDOW */
+.gw{
+    
+    background: linear-gradient( rgba(255, 255, 255, .50), rgba(255, 255, 255, .50) ), url('../images/bg/geo.jpg') center no-repeat;
+    background-size: cover;
+    
+}
+
+.gw__inner{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    /* window height minus header */
+    height: calc(100vh - 60px);
+
+    
+}
+
+.gw__header{
+
+    margin-bottom: 40px;
+}
+
+.button{
+    display: block;
+    border: 0;
+    outline: none;
+    border-radius: 10px;
+    background-color: #7FFFD4;
+    padding: 20px 40px;
+    font-size: 18px;
+    cursor: pointer;
+
+    transition: background .2s linear;
+}
+
+.button:hover{
+    background-color: #37E1FF;
+}
+
+/* MAIN QUIZ */
 .main
 {
-    display: flex;
+    display: none;
     justify-content: center;
     /* align-items: center; */
 
-    margin-top: 50px;
 
     /* высота экрана минус header */
-    height: calc(100vh - 110px);
+    height: calc(100vh - 60px);
 }
 
 /* HEAD */
 .quiz__head
 {
     display: flex;
+    margin-top: 50px;
     /* justify-content: center; */
 
 }
@@ -229,4 +273,28 @@ html, body
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
     font-style: italic;
+}
+
+
+/* special styles */
+
+.hide{
+    display: none;
+}
+
+.show{
+    display: flex;
+}
+
+/* fade */
+
+.fade-in{
+    opacity: 1;
+    transition: opacity .2s linear;
+}
+
+.fade-out{
+    opacity: 0;
+    overflow: hidden;
+    transition: opacity .2s linear;
 }

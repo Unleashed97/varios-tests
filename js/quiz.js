@@ -1,6 +1,28 @@
+// dom elements
+const question = document.getElementById('question');
+const image = document.getElementById('image');
+const qNumber = document.querySelector('.question__number');
+const progress = document.querySelector('.quiz-footer__content');
+const input = document.querySelector('.answer__content');
+const mark = document.querySelector('.quiz__mark');
+const rightAnswerCountry = document.querySelector('.quiz__description b');
+const rightAnswerCapital = document.querySelector('.quiz__right-answer');
+const btn = document.querySelector('.answer__complete');
 
 let result = {};
 let step = 0;
+
+const startTest = () => {
+    const greetingWindow = document.querySelector('.gw');
+    const startTestBtn = document.getElementById('start-test');
+    const mainWindow = document.querySelector('.main');
+    
+    startTestBtn.addEventListener('click', () => {
+        greetingWindow.classList.add('fade-out');
+        setTimeout(() => greetingWindow.classList.add('hide'), 200);
+        mainWindow.classList.add('show');
+    });
+};
 
 // let randomFunc = () => {
 //     const arr = [0,1,2,3,4];
@@ -14,25 +36,15 @@ let step = 0;
 // };
 
 const clearForm = () => {
-    let input = document.querySelector('.answer__content');
-    let mark = document.querySelector('.quiz__mark');
-    let rightAnswerCountry = document.querySelector('.quiz__description b');
-    let rightAnswerCapital = document.querySelector('.quiz__right-answer');
-
     input.value = '';
     input.className = 'answer__content';
     mark.innerHTML = '';
     mark.className = 'quiz__mark';
     rightAnswerCountry.innerHTML = '';
     rightAnswerCapital.innerHTML = '';
-
 }
 
-let showQuestion = questionNumber => {
-    const question = document.getElementById('question');
-    const image = document.getElementById('image');
-    const qNumber = document.querySelector('.question__number');
-    const progress = document.querySelector('.quiz-footer__content');
+const showQuestion = questionNumber => {
     let number = step;
 
     qNumber.innerHTML =  ++number + '. ';
@@ -41,17 +53,9 @@ let showQuestion = questionNumber => {
     progress.innerHTML = `Вопрос ${number} / ${quiz.length}`;
 };
 
-
-let checkAnswer = (question__number) => {
-    let btn = document.querySelector('.answer__complete');
-    let input = document.querySelector('.answer__content');
-    let mark = document.querySelector('.quiz__mark');
-    let rightAnswerCountry = document.querySelector('.quiz__description b');
-    let rightAnswerCapital = document.querySelector('.quiz__right-answer');
-
-
+const checkAnswer = (question__number) => {
     //HANDLER FOR BUTTON 
-
+    
     // btn.addEventListener('click', () => {
 
     //     if(input.value != '' && step < quiz.length){
@@ -93,8 +97,9 @@ let checkAnswer = (question__number) => {
 };
 
 
-let init = () => {
+const init = () => {
     // randomFunc();
+    startTest();
     showQuestion(step);
     checkAnswer(step);
 }
