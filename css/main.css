@@ -52,6 +52,16 @@ html, body
     background-color: #00CED1;
 }
 
+
+/* section header */
+.section{
+    width: 100%;
+}
+
+.section__header h1{
+    text-align: center;
+    margin-top: 20px;
+}
 /* GREETING WINDOW */
 .gw{
     
