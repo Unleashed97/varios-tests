@@ -88,7 +88,7 @@ const quiz = [
     {
         'question': 'Столица Молдавии: ',
         'image': 'images/moldova.jpg',
-        'answer': 'КИШЕНЕВ'
+        'answer': 'КИШИНЕВ'
     },
 
     {
